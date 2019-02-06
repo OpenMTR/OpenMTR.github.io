@@ -40,69 +40,69 @@
  
 
 
- # 4. Workbook Entries
-  ## James Willhoite - Jan 16
-   - Installed Open Liberty on local machine
-   - Researching Jax-RS and how Maven compiles while installing test appication to Open Liberty
-  ### Issue 
-    -  *Maven wouldn't compile, research was done on the web.xml file, which resulted in finding an unneeded dependancy in "Jersey". Once it was removed all went well.
-   
-   **_137 minutes_**
+# 4. Workbook Entries
+## James Willhoite - Jan 16
+- Installed Open Liberty on local machine
+- Researching Jax-RS and how Maven compiles while installing test appication to Open Liberty
+### Issue 
+-  *Maven wouldn't compile, research was done on the web.xml file, which resulted in finding an unneeded dependancy in "Jersey". Once it was removed all went well.
+
+**_137 minutes_**
 
 
-   ## Jenny Franklin Jan 16
-   - Updated this workbook with about notes on the set-up meeting
-   
-   **_35 minutes_**
+## Jenny Franklin Jan 16
+- Updated this workbook with about notes on the set-up meeting
+
+**_35 minutes_**
 
 
-   ## James Willhoite - Jan 17
-   - Added more content to gitignore to ignore a lot of unneeded files that intelliJ will add, also Mac file
+## James Willhoite - Jan 17
+- Added more content to gitignore to ignore a lot of unneeded files that intelliJ will add, also Mac file
 
 **_10 minutes_**
 
 
-   ## James Willhoite Jan 17
-   - Succeeded in showing the index.html file with open-liberty, but received an error when trying to get the API to respond. 
-   ### Issue
-     Exeption thrown by appication class 'com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.doInit:294'
+## James Willhoite Jan 17
+- Succeeded in showing the index.html file with open-liberty, but received an error when trying to get the API to respond. 
+### Issue
+Exeption thrown by appication class 'com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.doInit:294'
 
 **_73 minutes_**
 
 
-   ## Jenny Franklin Jan 17
-   - Reading about Semantic UI on their site (https://semantic-ui.com)
-   -	Installed Semantic via Node.js as per site instructions
-	 - Attempted to get navbar started using Atom
-   - I’m probably just moving too fast, but I’m having some trouble understanding how to call the script. I copy/pasted it into the    header as per the site instructions, but testing it is not working for whatever reason. As soon as I do, however, I’ll save it and push up to Github.
+## Jenny Franklin Jan 17
+- Reading about Semantic UI on their site (https://semantic-ui.com)
+-	Installed Semantic via Node.js as per site instructions
+ - Attempted to get navbar started using Atom
+- I’m probably just moving too fast, but I’m having some trouble understanding how to call the script. I copy/pasted it into the    header as per the site instructions, but testing it is not working for whatever reason. As soon as I do, however, I’ll save it and push up to Github.
 
 **_100 minutes_**
 
-  ## Matthew Thomas Jan 17
-  - Finding resources to read about azure pipelines. Azure account set up prior to the start of this log. 
+## Matthew Thomas Jan 17
+- Finding resources to read about azure pipelines. Azure account set up prior to the start of this log. 
 
 **_60 minutes_**
-  
-  ## Matthew Thomas Jan 18
-  - Initial setup of Pipeline infrastructure, following guide here:  https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-yaml?view=vsts
-  - Pipeline was created, it created a pull request to add the yml file to the master repository
+
+## Matthew Thomas Jan 18
+- Initial setup of Pipeline infrastructure, following guide here:  https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started-yaml?view=vsts
+- Pipeline was created, it created a pull request to add the yml file to the master repository
 
 **_90 minutes_**
-  
-  
-  ## Jenny Franklin Jan 18th 
-  - Figured out how to link Semantic to my <head> tag. 
-  - Got a basic first draft navbar built, including:
-    - Left/Right Split
-    - Icon with Tooltip
-    - Dropdown
-  - It took me a while to get it up and running, since I was using the link they had on the “Getting Started” page. I ended up watching
-  a youtube video that led me to their cdn links, and I just took the one that I needed, and cut the jQuery part
-  they had also added in the “Getting Started” section.
-  - I am only linking it in the <head> section for now, instead of using the download, for simplicity. I plan on switching to
-   referencing the download so that I can edit colors and such after I get the basics laid out. 
-  
-   **_125 minutes_**
+
+
+## Jenny Franklin Jan 18th 
+- Figured out how to link Semantic to my <head> tag. 
+- Got a basic first draft navbar built, including:
+- Left/Right Split
+- Icon with Tooltip
+- Dropdown
+- It took me a while to get it up and running, since I was using the link they had on the “Getting Started” page. I ended up watching
+a youtube video that led me to their cdn links, and I just took the one that I needed, and cut the jQuery part
+they had also added in the “Getting Started” section.
+- I am only linking it in the <head> section for now, instead of using the download, for simplicity. I plan on switching to
+referencing the download so that I can edit colors and such after I get the basics laid out. 
+
+**_125 minutes_**
 
 ## James Willhoite Jan 20
 - Worked off and on for the past couple of days. Have had a real hard time getting the Jax-rs set up. I know have it done and been playing around with it thanks to Matt from KUB. A lot of the tutorials out there are for GlassFish and Tomcat Application servers. These use Jesery Servlets to help contain them, Open Liberty does this for you. Once I removed those dependencies everything started to work. 
@@ -135,7 +135,7 @@
 ## Matt Thomas Jan 22
 - Explored more docker, and ran into this problem:  
   -It looks like open-liberty doesn’t play well with Azure, will update when a solid answer is received. 
-   
+
        Another Docker Guide to learn basics: https://rominirani.com/docker-tutorial-series-writing-a-dockerfile-ce5746617cd
 
 **_60 min_**
@@ -218,11 +218,11 @@ And it will download the image and save it in the web directory.
 ## James Willhoite Jan 28 
 - Was able to get Matt C’s OpenMeter.jar file imported into Eclipse and also into Maven.
 - Maven import was a little difficult. Was able to figure it out though. Needed to have Maven install via the command line
-  
+
       mvn install::install-file -Dfile=Library/openmeter.jar -DgroupId=com.mattclinard -DartifactId=openmeter -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
 
 - Then went into the pom.xml file and added a dependency for his library
-   
+
       <dependency>
 			 <groupId>com.mattclinard</groupId>
 			 <artifactId>openmeter</artifactId>
@@ -280,14 +280,14 @@ And it will download the image and save it in the web directory.
 - Updated trello with my current tasks
 - Furthering CI/CD pipelines
 - Due to an issue in the “copy files” task of the yaml that said 
-  
+
       “ contents: '/**/*'” on line 38 (currently)
 
 - The build never copied any files to the release pipeline. 
 - By reversing the contents to say :
-  
+
       \**\*
-      
+
  - the build worked successfully. Now to fix the release.
 
 **_130 mins_**
@@ -351,5 +351,5 @@ And it will download the image and save it in the web directory.
 
 
 
-   
+
 
